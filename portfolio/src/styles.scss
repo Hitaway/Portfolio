@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+body, html {
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin: 0px;
+}
+
+app-root {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
