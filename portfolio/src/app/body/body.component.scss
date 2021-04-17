@@ -1,0 +1,62 @@
+#portfolio-body {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.2rem;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    h1 {
+        font-size: 1.6rem;
+        letter-spacing: 13px;
+        margin: 0px;
+    }
+
+    #slogan {
+        letter-spacing: 6px;
+        font-size: 4em;
+        margin-top: 8px;
+
+        p {
+            animation: animated-text 5s steps(18,end) 1s infinite backwards,
+                    animated-cursor 600ms steps(18,end) infinite;
+            border-right: solid 1px white;
+            white-space: nowrap;
+            overflow: hidden;    
+            margin: 0 auto;
+        }
+
+        /* text animation */
+        @keyframes animated-text{
+            0%   { width: 0; }
+            50%  { width: 255px; }
+            100% { width: 255px; }
+        }
+
+        /* cursor animations */
+        @keyframes animated-cursor{
+            from { border-right-color: white; }
+            to { border-right-color: transparent; }
+        }
+    }
+
+    #location {
+        font-size: 0.6rem;
+        margin-top: 5px;
+    }
+
+    @media screen and (min-width: 70rem) {
+        h1 {
+            font-size: 2.4rem;
+        }
+
+        #slogan {
+            font-size: 4em;
+        }
+
+        #location {
+            font-size: 4em;
+        }
+    }
+}
