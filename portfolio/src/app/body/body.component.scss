@@ -17,27 +17,23 @@
         letter-spacing: 6px;
         font-size: 4em;
         margin-top: 8px;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        width: fit-content;
 
         p {
-            animation: animated-text 5s steps(18,end) 1s infinite backwards,
-                    animated-cursor 600ms steps(18,end) infinite;
+            margin: 0;
+        }
+
+        #cursor {
+            animation: animated-cursor 600ms linear infinite;
             border-right: solid 1px white;
-            white-space: nowrap;
-            overflow: hidden;    
-            margin: 0 auto;
+            height: 15px;
         }
 
-        /* text animation */
-        @keyframes animated-text{
-            0%   { width: 0; }
-            50%  { width: 255px; }
-            100% { width: 255px; }
-        }
-
-        /* cursor animations */
-        @keyframes animated-cursor{
-            from { border-right-color: white; }
-            to { border-right-color: transparent; }
+        @keyframes animated-cursor {
+            50% { opacity: 0; }
         }
     }
 
