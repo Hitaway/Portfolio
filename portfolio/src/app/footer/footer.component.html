@@ -4,7 +4,7 @@
         <a *ngIf="item.type === 1" target="_blank" rel="noopener noreferrer" href="{{ item.link }}">
             <i class="{{ item.logoClass }}" aria-hidden="true"></i>
         </a>
-        <a *ngIf="item.type === 0" href="mailto:quentinrat@hotmail.fr">
+        <a *ngIf="item.type === 0" href="mailto:{{ item.link }}">
             <i class="{{ item.logoClass }}" aria-hidden="true"></i> 
         </a>
     </div>
