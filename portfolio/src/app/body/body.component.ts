@@ -8,7 +8,7 @@ import { OnInit } from '@angular/core';
 })
 export class BodyComponent implements OnInit {
 
-  public listWorld: string[] = ['Développeur', 'Blockchain Enthousiaste'];
+  public listWorld: string[] = ['Développeur', 'Front end','Blockchain Enthousiaste'];
   public worldToWrite: string = '';
 
   ngOnInit() {
